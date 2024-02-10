@@ -1,0 +1,74 @@
+<!doctype html>
+
+<p>🎈</p>
+
+<script>
+  let p = document.querySelector("p");
+  let size;
+  function setSize(newSize) {
+    size = newSize;
+    p.style.fontSize = size + "px";
+  }
+  setSize(20);
+
+  function handleArrow(event) {
+    if (event.key == "ArrowUp") {
+      if (size > 70) {
+        p.textContent = "💥";
+        document.body.removeEventListener("keydown", handleArrow);
+      } else {
+        setSize(size * 1.1);
+        event.preventDefault();
+      }
+    } else if (event.key == "ArrowDown") {
+      setSize(size * 0.9);
+      event.preventDefault();
+    }
+  }
+  document.body.addEventListener("keydown", handleArrow);
+</script>
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inflatable Emoji Balloon</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+    }
+    #balloon {
+      font-size: 40px;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+  <span id="balloon"></span>
+
+  <script>
+    const balloon = document.getElementById('balloon');
+    let size = 40; // Initial size
+
+    // Event listener for key presses
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowUp') {
+        size *= 1.1; // Increase size by 10%
+      } else if (event.key === 'ArrowDown') {
+        size *= 0.9; // Decrease size by 10%
+      }
+
+      // Update font size and check for explosion
+      balloon.style.fontSize = `${size}px`;
+      if (size > 80) {
+        balloon.textContent = ''; // Change to explosion emoji
+        document.removeEventListener('keydown', eventHandler); // Disable event listener
+      }
+    });
+  </script>
+</body>
+</html>
+-->
