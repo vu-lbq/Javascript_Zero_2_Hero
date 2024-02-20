@@ -1,5 +1,5 @@
 # Javascript_Zero_2_Hero
-Javascript_Zero_2_Hero
+Javascript Zero to Hero
 
 1. JavaScript syntax and data types
 2. Functions and function expressions
