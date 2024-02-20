@@ -1,5 +1,7 @@
 /**
- * [LocalMaxima](https://www.geeksforgeeks.org/find-indices-of-all-local-maxima-and-local-minima-in-an-array/) is an algorithm to find relative bigger numbers compared to their neighbors
+ * [LocalMaxima](https://www.geeksforgeeks.org/find-indices-of-all-local-maxima-and-local-minima-in-an-array/) 
+ * 
+ * is an algorithm to find relative bigger numbers compared to their neighbors
  *
  * Notes:
  * - works by using divide and conquer
