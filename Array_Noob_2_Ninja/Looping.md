@@ -24,4 +24,4 @@ animals = [cat, dog, lion]
 ##### reversedNames.forEach((name, index) => console.log(index + ": " + name));
 
 ### Iterating Through A Sparse Array
-![alt text](image.png)
+![alt text](./Images/image.png)
