@@ -33,3 +33,12 @@ for (let i = input.length - 1; i >= 0; i--) {
 }
 return input;
 }
+
+#### Picking a Random Item
+let myArray = ["Unos", "Dos", "Tres", "Catorce"];
+let value = myArray[Math.floor(Math.random() * myArray.length)];
+
+#### Merging array
+![alt text](./Images/image-8.png)
+
+#### Swapping Items
