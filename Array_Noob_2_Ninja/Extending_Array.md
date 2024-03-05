@@ -21,4 +21,6 @@ class AwesomeArray extends Array {
     input[index_B] = temp;
     }
 }
+let myData = new AwesomeArray("a", "b", "c", "d", "e", "f", "g"); myData.swap(0, 1);
+console.log(myData); // ["b", "a", "c", "d", "e", "f", "g"]
 ```

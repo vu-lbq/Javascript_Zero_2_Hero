@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let funnyGuy ={}
+        // Dot Notation Approach
+        funnyGuy.firstName = "Vu";
+        funnyGuy.lastName = "Le";
+        console.log(funnyGuy.firstName)
+
+        // bracket approack
+        funnyGuy["firstName"] = "Minh";
+        funnyGuy["lastName"] = "Le";
+        console.log(funnyGuy["lastName"])
+
+        // pre-define data structure
+        let custom = "occupation"
+        let funnyGuy01 = {
+            firstName: "Vu",
+            lastName: "Le",
+            [custom]: "Engineer",
+            // value can be objects
+            shapes: {
+                title: "rectangle",
+                show: "Sitcom" 
+            }
+        }
+        console.log(funnyGuy01.shapes.show)
+
+        // delete properties slow than set undefined
+        delete funnyGuy01.shapes.show;
+        console.log(funnyGuy01.shapes)
+        
+        colors.footer = undefined;
+    
+        // Prototype 
+        let person = {
+        getName: function () {
+            return "The name is " + this.firstName + " " + this.lastName;
+            }
+        };
+
+        let funnyGuy = Object.create(person);
+        funnyGuy.firstName = "Conan";
+        funnyGuy.lastName = "O'Brien";
+
+        let theDude = Object.create(person);
+        theDude.firstName = "Jeffrey";
+        theDude.lastName = "Lebowski";
+
+        let detective = Object.create(person);
+        detective.firstName = "Adrian";
+        detective.lastName = "Monk";
+
+        detective.getName(); // The name is Adrian Monk
+    </script>
+</body>
+</html>
